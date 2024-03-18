@@ -21,3 +21,7 @@ Refactoring is needed to make the code more concise by pulling out those differe
 ### Commit 4 Reflection notes
 
 Because I want to simulate the slow response, when `/sleep` url is run, I intentionally make the server sleep for 5 seconds before responding.
+
+### Commit 5 Reflection notes
+
+ThreadPool works by manages a fixed number of worker threads, each of which continuously waits for jobs to be sent to them. When a job is submitted to the ThreadPool, it is picked up by one of the worker threads, executed, and then the thread becomes available to pick up the next job. This allows for efficient handling of concurrent tasks without spawning a new thread for each task, which can be costly in terms of resources.
