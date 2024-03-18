@@ -17,3 +17,7 @@ For the `handle_connection`, it takes a TCP stream as input. It creates a new `B
 Refactoring is needed to make the code more concise by pulling out those differences into separate if and else lines. If and else blocks have a lot of repetition, they’re both reading files and writing the contents of the files to the stream. The only differences are the status line and the filename.
 
 ![](imgfiles/commit3.png)
+
+### Commit 4 Reflection notes
+
+Because I want to simulate the slow response, when `/sleep` url is run, I intentionally make the server sleep for 5 seconds before responding.
