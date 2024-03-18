@@ -10,4 +10,10 @@ For the `handle_connection`, it takes a TCP stream as input. It creates a new `B
 
 ### Commit 2 Reflection notes
 
-![](img/Screenshot 2024-03-18 210443.png)
+![](imgfiles/commit2.png)
+
+### Commit 3 Reflection notes
+
+Refactoring is needed to make the code more concise by pulling out those differences into separate if and else lines. If and else blocks have a lot of repetition, they’re both reading files and writing the contents of the files to the stream. The only differences are the status line and the filename.
+
+![](imgfiles/commit3.png)
